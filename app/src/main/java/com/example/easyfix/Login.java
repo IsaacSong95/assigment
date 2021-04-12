@@ -24,7 +24,8 @@ public class Login extends AppCompatActivity {
     Button buttonLogin;
     TextView textViewSignup;
     ProgressBar progressBar;
-
+    Button xxx;
+    TextView textVieweeSignup;
 
 
     @SuppressLint("WrongViewCast")
