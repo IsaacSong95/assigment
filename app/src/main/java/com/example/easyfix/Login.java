@@ -28,6 +28,10 @@ public class Login extends AppCompatActivity {
     TextView textVieweeSignup;
 
 
+
+    String sdfsdf;
+
+
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
