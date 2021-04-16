@@ -29,9 +29,6 @@ public class Login extends AppCompatActivity {
 
 
 
-    String sdfsdf;
-
-
     @SuppressLint("WrongViewCast")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,11 +57,12 @@ public class Login extends AppCompatActivity {
 
                 username = String.valueOf(textInputEditTextUsername.getText());
                 password = String.valueOf(textInputEditTextPasswrod.getText());
-                Intent MainActivity = new Intent(Login.this, MainActivity.class);
-                startActivity(MainActivity);
+
+                if (username.equals("isaac") && password.equals("isaac") ) {
+                    Intent MainActivity = new Intent(Login.this, MainActivity.class);
+                    startActivity(MainActivity);
 
 
-                if (!username.equals("") && !password.equals("") ) {
                     progressBar.setVisibility(View.VISIBLE);
 
 //                    Handler handler = new Handler();
@@ -103,7 +101,7 @@ public class Login extends AppCompatActivity {
                 }
 
                 else {
-                    Toast.makeText(getApplicationContext(),"All fields required", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(),"username or password is incorrect", Toast.LENGTH_SHORT).show();
                 }
             }
         });
